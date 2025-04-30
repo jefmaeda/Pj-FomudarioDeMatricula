@@ -1,31 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
   <title>Estrelas do Amanhã</title>
 
   <link rel="stylesheet" href="./style/index.css">
 </head>
+
 <body>
   <div id="app">
     <main>
       <div class="main-container">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vero quos mollitia maiores consequatur accusantium eligendi, pariatur maxime incidunt quod error ipsam, earum, omnis iste ducimus unde? Consequatur, enim quia.
+        <div class="back">
+          <img src="./assets/icons/arrow-left-02.svg" alt="seta para esquerda">
+          <span>voltar</span>
+        </div>
+
+        <h1>Formulário de matrícula</h1>
+        <p>
+          Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.
+        </p>
+
+        <form enctype="multipart/form-data" method="post">
+          <fieldset class="child-info">
+            <legend>Informações da criança</legend>
+
+            <div class="input-wrapper">
+              <label for="fullname">Nome completo</label>
+              <input id="fullname" name="fullname" type="text" placeholder="Qual o nome da criança">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="birth">Data de nascimento</label>
+              <input id="birth" name="birth" type="date" placeholder="Dia do aniversario">
+
+            </div>
+
+            <div class="select-wrapper">
+              <label for="gender">Sexo</label>
+              <select name="gender" id="gender">
+                <option value="female">Feminino</option>
+                <option value="male">Masculino</option>
+                <option value="na">Outro</option>
+              </select>
+            </div>
+
+            <div class="text-wrapper">
+              <label for="medical-info">
+                Informações médicas
+              </label>
+
+              <textarea 
+              name="medical-info" 
+              id="medical-info"
+              cols="30" rows="10"
+              placeholder="A criança tem alguma condinção médica">
+            </textarea>
+            </div>
+
+            <div class="droparea-wrapper">
+              <legend>Certidão de nascimento</legend>
+              <input type="file" id="birth-file" name="birth-file">
+              <img src="./assets/icons/cloud-upload.svg" alt="">
+              <p>clique aqui para <br>
+              selecionar os arquivos</p>
+            </div>
+
+          </fieldset>
+        </form>
       </div>
+
     </main>
 
     <aside>
       <div class="aside-container">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis voluptas molestias dignissimos! Exercitationem laboriosam nostrum nobis id voluptas perspiciatis excepturi fugit. Omnis eligendi blanditiis velit. Doloribus temporibus recusandae libero animi?
+        <header>
+          <img src="./assets/icons/logo.svg" alt="logo">
+          <h2>Porque cada momento de
+            <span>
+              aprendizado
+            </span>
+            conta
+          </h2>
+          <p>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.</p>
+        </header>
+
+        <img src="./assets/icons/Illustration.svg" alt="profesora com alunos desenhando.">
+
       </div>
     </aside>
   </div>
-  
+
 </body>
+
 </html>
