@@ -2,7 +2,8 @@ input, textarea, select{
   appearance: none; /*tirar o estilo padrao */
   width: 100%;
   border-radius: .5rem;
-  border: 1px solid var(--stroke-default);
+  border: 2px solid transparent;
+  outline: 1px solid var(--stroke-default);
 
   padding: .75rem 1rem;
   font: var(--text);
@@ -19,9 +20,12 @@ label{
 input:focus,
 select:focus,
 textarea:focus,
+input:hover,
+select:hover,
+textarea:hover,
 input[type="date"]:focus-within{
   outline: .25rem solid var(--surface-secondary);
-  border: .125rem solid var(--stroke-highlight);
+  border-color: var(--stroke-highlight);
   /* para funcionar no safari */
   outline-offset: .1px;
 }
